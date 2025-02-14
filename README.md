@@ -37,8 +37,14 @@ Username: user
 Password: pwd
 Authentication is required for all API requests using the credentials query parameter.
 
-API request
-curl.exe -F "file=@payroll.csv" "http://localhost:3000/process?country=do&credentials=user+pwd&company=atdev"
+API request examples
+atdev
+curl.exe -F "file=@payroll.csv" -u user:pwd "http://localhost:3000/process?country=USA&company=atdev"
+curl.exe -F "file=@payroll.csv" -u user:pwd "http://localhost:3000/process?country=do&company=atdev"
+
+default
+curl.exe -F "file=@payroll.csv" -u user:pwd "http://localhost:3000/process?country=do&company=amazon"
+curl.exe -F "file=@payroll.csv" -u user:pwd "http://localhost:3000/process?country=USA&company=meta"
 
 Response example
 {

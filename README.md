@@ -14,7 +14,7 @@ A **Dockerized Flask Web API** for processing payroll data from a CSV file, gene
 ## 🛠️ Installation & Setup
 
 ### **1️⃣ Clone the Repository**
-git clone https://github.com/your-repo/payroll_processor.git
+git clone https://github.com/Joandelacrz/payroll_processor_public 
 cd payroll_processor
 
 2️⃣ Set Up Environment Variables
